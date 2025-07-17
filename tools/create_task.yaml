@@ -1,0 +1,49 @@
+identity:
+  name: create_task
+  author: langgenius
+  label:
+    en_US: Create Task
+description:
+  human:
+    en_US: Create a task in the Microsoft Todo list
+  llm: Create a task in the Microsoft Todo list
+parameters:
+- name: list_id
+  type: string
+  required: true
+  label:
+    en_US: List Id
+  human_description:
+    en_US: The id of the list to create the task in
+  llm_description: The id of the list to create the task in, type is string
+  form: llm
+- name: title
+  type: string
+  required: true
+  label:
+    en_US: Title
+  human_description:
+    en_US: The title of the task to create
+  llm_description: The title of the task to create, type is string
+  form: llm
+- name: due_date
+  type: string
+  required: false
+  label:
+    en_US: Due Date
+  human_description:
+    en_US: The due date of the task to create
+  llm_description: The due date of the task to create, type is string, format is YYYY-MM-DD
+  form: llm
+- name: body_text
+  type: string
+  required: false
+  label:
+    en_US: Body Text
+  human_description:
+    en_US: The body text of the task to create
+  llm_description: The body text of the task to create, type is string
+  form: llm
+extra:
+  python:
+    source: tools/create_task.py

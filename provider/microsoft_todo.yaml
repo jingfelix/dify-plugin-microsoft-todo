@@ -1,19 +1,14 @@
 # credentials_for_provider:
 #   token:
-#     help:
-#       en_US: Get your Access Tokens from Microsoft
-#       pt_BR: Obtenha seus Tokens de Acesso do Microsoft
-#       zh_Hans: 从 Microsoft 获取你的 Access Tokens
-#     label:
-#       en_US: Access Tokens
-#       pt_BR: Tokens de acesso
-#       zh_Hans: Access Tokens
-#     placeholder:
-#       en_US: Please input your Microsoft Access Tokens
-#       pt_BR: Insira seus Tokens de Acesso do Microsoft
-#       zh_Hans: 请输入你的 Microsoft Access Tokens
-#     required: true
 #     type: secret-input
+#     required: true
+#     label:
+#       en_US: Token
+#     placeholder:
+#       en_US: Enter your Microsoft Todo Token
+#     help:
+#       en_US: Your Microsoft Todo Token
+#     url: https://learn.microsoft.com/en-us/graph/api/todo-list-tasks?view=graph-rest-1.0&tabs=http
 
 oauth_schema:
   client_schema:
@@ -53,21 +48,23 @@ oauth_schema:
       label:
         zh_Hans: "Access Token"
         en_US: "Access Token"
-
 identity:
-  author: "langgenius"
-  name: "microsoft_todo"
+  author: langgenius
+  name: microsoft_todo
   label:
-    en_US: "microsoft_todo"
-    zh_Hans: "microsoft_todo"
-    pt_BR: "microsoft_todo"
+    en_US: Microsoft Todo
   description:
-    en_US: "Access your Microsoft To Do list in Dify"
-    zh_Hans: "Access your Microsoft To Do list in Dify"
-    pt_BR: "Access your Microsoft To Do list in Dify"
-  icon: "icon.png"
+    en_US: A plugin to interact with Microsoft Todo
+  icon: icon.png
 tools:
-  - tools/get_lists.yaml
+- tools/complete_task.yaml
+- tools/create_task.yaml
+- tools/get_all_tasks.yaml
+- tools/get_lists.yaml
+- tools/get_list_by_id.yaml
+- tools/get_task_by_id.yaml
+- tools/get_tasks.yaml
+- tools/get_tasks_by_list_id.yaml
 extra:
   python:
     source: provider/microsoft_todo.py

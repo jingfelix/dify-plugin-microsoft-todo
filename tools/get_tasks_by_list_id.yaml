@@ -1,0 +1,22 @@
+identity:
+  name: get_tasks_by_list_id
+  author: langgenius
+  label:
+    en_US: Get Tasks By List Id
+description:
+  human:
+    en_US: Get all tasks from the Microsoft Todo list by list id
+  llm: Get all tasks from the Microsoft Todo list by list id
+parameters:
+- name: list_id
+  type: string
+  required: true
+  label:
+    en_US: List Id
+  human_description:
+    en_US: The id of the list to get
+  llm_description: The id of the list to get, type is string
+  form: llm
+extra:
+  python:
+    source: tools/get_tasks_by_list_id.py

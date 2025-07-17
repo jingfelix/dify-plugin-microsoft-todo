@@ -1,0 +1,13 @@
+identity:
+  name: get_all_tasks
+  author: langgenius
+  label:
+    en_US: Get All Tasks
+description:
+  human:
+    en_US: Get all tasks from the Microsoft Todo list
+  llm: Get all tasks from the Microsoft Todo list
+parameters: []
+extra:
+  python:
+    source: tools/get_all_tasks.py

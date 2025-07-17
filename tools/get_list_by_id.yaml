@@ -1,0 +1,22 @@
+identity:
+  name: get_list_by_id
+  author: langgenius
+  label:
+    en_US: Get List By Id
+description:
+  human:
+    en_US: Get a list by id from the Microsoft Todo list
+  llm: Get a list by id from the Microsoft Todo list
+parameters:
+- name: list_id
+  type: string
+  required: true
+  label:
+    en_US: List Id
+  human_description:
+    en_US: The id of the list to get
+  llm_description: The id of the list to get, type is string
+  form: llm
+extra:
+  python:
+    source: tools/get_list_by_id.py

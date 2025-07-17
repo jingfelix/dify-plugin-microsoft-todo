@@ -1,0 +1,31 @@
+identity:
+  name: complete_task
+  author: langgenius
+  label:
+    en_US: Complete Task
+description:
+  human:
+    en_US: Complete a task in the Microsoft Todo list
+  llm: Complete a task in the Microsoft Todo list
+parameters:
+- name: task_id
+  type: string
+  required: true
+  label:
+    en_US: Task Id
+  human_description:
+    en_US: The id of the task to complete
+  llm_description: The id of the task to complete, type is string
+  form: llm
+- name: list_id
+  type: string
+  required: true
+  label:
+    en_US: List Id
+  human_description:
+    en_US: The id of the list the task belongs to
+  llm_description: The id of the list the task belongs to, type is string
+  form: llm
+extra:
+  python:
+    source: tools/complete_task.py
