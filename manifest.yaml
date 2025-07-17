@@ -12,7 +12,7 @@ description:
   ja_JP: Access your Microsoft To Do list in Dify
   zh_Hans: Access your Microsoft To Do list in Dify
   pt_BR: Access your Microsoft To Do list in Dify
-icon: icon.svg
+icon: icon.png
 resource:
   memory: 268435456
   permission: {}

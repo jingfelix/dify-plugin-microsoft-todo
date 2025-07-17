@@ -23,6 +23,7 @@ class GetListsTool(Tool):
                 "display_name": task_list.displayName,
                 "is_owner": task_list.isOwner,
                 "is_shared": task_list.isShared,
+                "link": task_list.link,
             }
             for task_list in todo_client.get_lists()
         ]
