@@ -1,0 +1,16 @@
+identity:
+  name: "get_lists"
+  author: "langgenius"
+  label:
+    en_US: "Get Microsoft ToDo Lists"
+    zh_Hans: "获取 Microsoft ToDo 列表"
+    pt_BR: "Obter listas do Microsoft ToDo"
+description:
+  human:
+    en_US: "List your Microsoft ToDo lists in Dify"
+    zh_Hans: "列出您的 Microsoft ToDo 列表"
+    pt_BR: "Liste suas tarefas do Microsoft ToDo"
+  llm: "List your Microsoft ToDo lists in Dify"
+extra:
+  python:
+    source: tools/get_lists.py

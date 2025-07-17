@@ -1,0 +1,73 @@
+credentials_for_provider:
+  token:
+    help:
+      en_US: Get your Access Tokens from Microsoft
+      pt_BR: Obtenha seus Tokens de Acesso do Microsoft
+      zh_Hans: 从 Microsoft 获取你的 Access Tokens
+    label:
+      en_US: Access Tokens
+      pt_BR: Tokens de acesso
+      zh_Hans: Access Tokens
+    placeholder:
+      en_US: Please input your Microsoft Access Tokens
+      pt_BR: Insira seus Tokens de Acesso do Microsoft
+      zh_Hans: 请输入你的 Microsoft Access Tokens
+    required: true
+    type: secret-input
+
+oauth_schema:
+  client_schema:
+    - name: "client_id"
+      type: "secret-input"
+      required: true
+      url: https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/CreateApplicationBlade/quickStartType~/null/isMSAApp~/false
+      placeholder:
+        en_US: "Please input your Client ID"
+        zh_Hans: "请输入你的 Client ID"
+        pt_BR: "Insira seu Client ID"
+      help:
+        en_US: "Client ID is used to authenticate requests to the Microsoft API."
+        zh_Hans: "Client ID 用于认证请求到 Microsoft API。"
+        pt_BR: "Client ID é usado para autenticar solicitações à API do Microsoft."
+      label:
+        zh_Hans: "Client ID"
+        en_US: "Client ID"
+    - name: "client_secret"
+      type: "secret-input"
+      required: true
+      url: https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/CreateApplicationBlade/quickStartType~/null/isMSAApp~/false
+      placeholder:
+        en_US: "Please input your Client Secret"
+        zh_Hans: "请输入你的 Client Secret"
+        pt_BR: "Insira seu Client Secret"
+      help:
+        en_US: "Client Secret is used to authenticate requests to the Microsoft API."
+        zh_Hans: "Client Secret 用于认证请求到 Microsoft API。"
+        pt_BR: "Client Secret é usado para autenticar solicitações à API do Microsoft."
+      label:
+        zh_Hans: "Client Secret"
+        en_US: "Client Secret"
+  credentials_schema:
+    - name: "access_tokens"
+      type: "secret-input"
+      label:
+        zh_Hans: "Access Token"
+        en_US: "Access Token"
+
+identity:
+  author: "langgenius"
+  name: "microsoft_todo"
+  label:
+    en_US: "microsoft_todo"
+    zh_Hans: "microsoft_todo"
+    pt_BR: "microsoft_todo"
+  description:
+    en_US: "Access your Microsoft ToDo list in Dify"
+    zh_Hans: "Access your Microsoft ToDo list in Dify"
+    pt_BR: "Access your Microsoft ToDo list in Dify"
+  icon: "icon.svg"
+tools:
+  - tools/get_lists.yaml
+extra:
+  python:
+    source: provider/microsoft_todo.py
