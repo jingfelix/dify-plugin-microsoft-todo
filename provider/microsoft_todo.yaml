@@ -1,19 +1,19 @@
-credentials_for_provider:
-  token:
-    help:
-      en_US: Get your Access Tokens from Microsoft
-      pt_BR: Obtenha seus Tokens de Acesso do Microsoft
-      zh_Hans: 从 Microsoft 获取你的 Access Tokens
-    label:
-      en_US: Access Tokens
-      pt_BR: Tokens de acesso
-      zh_Hans: Access Tokens
-    placeholder:
-      en_US: Please input your Microsoft Access Tokens
-      pt_BR: Insira seus Tokens de Acesso do Microsoft
-      zh_Hans: 请输入你的 Microsoft Access Tokens
-    required: true
-    type: secret-input
+# credentials_for_provider:
+#   token:
+#     help:
+#       en_US: Get your Access Tokens from Microsoft
+#       pt_BR: Obtenha seus Tokens de Acesso do Microsoft
+#       zh_Hans: 从 Microsoft 获取你的 Access Tokens
+#     label:
+#       en_US: Access Tokens
+#       pt_BR: Tokens de acesso
+#       zh_Hans: Access Tokens
+#     placeholder:
+#       en_US: Please input your Microsoft Access Tokens
+#       pt_BR: Insira seus Tokens de Acesso do Microsoft
+#       zh_Hans: 请输入你的 Microsoft Access Tokens
+#     required: true
+#     type: secret-input
 
 oauth_schema:
   client_schema:
@@ -62,9 +62,9 @@ identity:
     zh_Hans: "microsoft_todo"
     pt_BR: "microsoft_todo"
   description:
-    en_US: "Access your Microsoft ToDo list in Dify"
-    zh_Hans: "Access your Microsoft ToDo list in Dify"
-    pt_BR: "Access your Microsoft ToDo list in Dify"
+    en_US: "Access your Microsoft To Do list in Dify"
+    zh_Hans: "Access your Microsoft To Do list in Dify"
+    pt_BR: "Access your Microsoft To Do list in Dify"
   icon: "icon.svg"
 tools:
   - tools/get_lists.yaml

@@ -8,10 +8,10 @@ label:
   zh_Hans: microsoft_todo
   pt_BR: microsoft_todo
 description:
-  en_US: Access your Microsoft ToDo list in Dify
-  ja_JP: Access your Microsoft ToDo list in Dify
-  zh_Hans: Access your Microsoft ToDo list in Dify
-  pt_BR: Access your Microsoft ToDo list in Dify
+  en_US: Access your Microsoft To Do list in Dify
+  ja_JP: Access your Microsoft To Do list in Dify
+  zh_Hans: Access your Microsoft To Do list in Dify
+  pt_BR: Access your Microsoft To Do list in Dify
 icon: icon.svg
 resource:
   memory: 268435456
