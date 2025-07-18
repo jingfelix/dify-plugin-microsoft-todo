@@ -63,9 +63,9 @@ identity:
     zh_CN: 微软待办
     ja_JP: マイクロソフトToDo
   description:
-    en_US: A plugin to interact with Microsoft To Do
-    zh_CN: 用于与微软待办交互的插件
-    ja_JP: Microsoft To Doと連携するプラグイン
+    en_US: Access Microsoft To Do tasks and lists in Dify
+    zh_CN: 在 Dify 中访问微软待办任务和列表
+    ja_JP: DifyでMicrosoft To Doのタスクとリストにアクセス1
   icon: icon.png
 tools:
 - tools/complete_task.yaml

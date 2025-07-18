@@ -2,10 +2,10 @@ identity:
   name: "get_lists"
   author: "langgenius"
   label:
-    en_US: "Get Microsoft To Do Lists"
-    zh_CN: "获取 Microsoft To Do 列表"
-    ja_JP: "Microsoft To Do リストを取得"
-    pt_BR: "Obter listas do Microsoft To Do"
+    en_US: "Get Lists"
+    zh_CN: "获取 列表"
+    ja_JP: "リストを取得"
+    pt_BR: "Obter listas"
 description:
   human:
     en_US: "List your Microsoft To Do lists in Dify"
