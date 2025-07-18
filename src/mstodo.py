@@ -17,22 +17,6 @@ from pydantic import BaseModel
 from pymstodo import Task, TaskList, ToDoConnection
 from pymstodo.client import Token
 
-"""
-get_lists
-
-get_list_by_id
-
-get_all_tasks
-
-get_tasks
-
-get_task_by_id
-
-create_task
-
-complete_task
-"""
-
 
 class MSTodoCredentials(BaseModel):
     token: Annotated[
@@ -40,8 +24,8 @@ class MSTodoCredentials(BaseModel):
         Credential(
             name="token",
             label="Token",
-            help="Your Microsoft Todo Token",
-            placeholder="Enter your Microsoft Todo Token",
+            help="Your Microsoft To Do Token",
+            placeholder="Enter your Microsoft To Do Token",
             url="https://learn.microsoft.com/en-us/graph/api/todo-list-tasks?view=graph-rest-1.0&tabs=http",
             type=CredentialType.secret_input,
             required=True,
@@ -59,7 +43,7 @@ class MSTodoPlugin(BasePlugin):
     @tool(
         name="get_tasks",
         label="Get Tasks",
-        description="Get all tasks from the Microsoft Todo list",
+        description="Get all tasks from the Microsoft To Do list",
     )
     def get_tasks(self) -> Generator:
 
@@ -83,7 +67,7 @@ class MSTodoPlugin(BasePlugin):
     @tool(
         name="get_list_by_id",
         label="Get List By Id",
-        description="Get a list by id from the Microsoft Todo list",
+        description="Get a list by id from the Microsoft To Do list",
     )
     def get_list_by_id(
         self,
@@ -118,7 +102,7 @@ class MSTodoPlugin(BasePlugin):
     @tool(
         name="get_all_tasks",
         label="Get All Tasks",
-        description="Get all tasks from the Microsoft Todo list",
+        description="Get all tasks from the Microsoft To Do list",
     )
     def get_all_tasks(self) -> Generator:
         token: Token = Token(**json.loads(self.credentials.token))
@@ -146,7 +130,7 @@ class MSTodoPlugin(BasePlugin):
     @tool(
         name="get_tasks_by_list_id",
         label="Get Tasks By List Id",
-        description="Get all tasks from the Microsoft Todo list by list id",
+        description="Get all tasks from the Microsoft To Do list by list id",
     )
     def get_tasks_by_list_id(
         self,
@@ -185,7 +169,7 @@ class MSTodoPlugin(BasePlugin):
     @tool(
         name="get_task_by_id",
         label="Get Task By Id",
-        description="Get a task by id from the Microsoft Todo list",
+        description="Get a task by id from the Microsoft To Do list",
     )
     def get_task_by_id(
         self,
@@ -232,7 +216,7 @@ class MSTodoPlugin(BasePlugin):
     @tool(
         name="create_task",
         label="Create Task",
-        description="Create a task in the Microsoft Todo list",
+        description="Create a task in the Microsoft To Do list",
     )
     def create_task(
         self,
@@ -308,7 +292,7 @@ class MSTodoPlugin(BasePlugin):
     @tool(
         name="complete_task",
         label="Complete Task",
-        description="Complete a task in the Microsoft Todo list",
+        description="Complete a task in the Microsoft To Do list",
     )
     def complete_task(
         self,
@@ -356,8 +340,8 @@ class MSTodoPlugin(BasePlugin):
 plugin = MSTodoPlugin(
     meta=MetaInfo(
         name="microsoft_todo",
-        label="Microsoft Todo",
-        description="A plugin to interact with Microsoft Todo",
+        label="Microsoft To Do",
+        description="A plugin to interact with Microsoft To Do",
         version="0.0.1",
         author="langgenius",
         icon="icon.png",

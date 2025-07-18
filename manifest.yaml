@@ -3,9 +3,13 @@ type: plugin
 author: langgenius
 name: microsoft_todo
 label:
-  en_US: Microsoft Todo
+  en_US: Microsoft To Do
+  zh_CN: 微软待办
+  ja_JP: マイクロソフトToDo
 description:
-  en_US: A plugin to interact with Microsoft Todo
+  en_US: A plugin to interact with Microsoft To Do
+  zh_CN: 用于与微软待办交互的插件
+  ja_JP: Microsoft To Doと連携するプラグイン
 icon: icon.png
 resource:
   memory: 268435456

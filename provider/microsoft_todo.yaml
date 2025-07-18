@@ -5,9 +5,9 @@
 #     label:
 #       en_US: Token
 #     placeholder:
-#       en_US: Enter your Microsoft Todo Token
+#       en_US: Enter your Microsoft To Do Token
 #     help:
-#       en_US: Your Microsoft Todo Token
+#       en_US: Your Microsoft To Do Token
 #     url: https://learn.microsoft.com/en-us/graph/api/todo-list-tasks?view=graph-rest-1.0&tabs=http
 
 oauth_schema:
@@ -18,43 +18,54 @@ oauth_schema:
       url: https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/CreateApplicationBlade/quickStartType~/null/isMSAApp~/false
       placeholder:
         en_US: "Please input your Client ID"
-        zh_Hans: "请输入你的 Client ID"
+        zh_CN: "请输入你的 Client ID"
+        ja_JP: "Client ID を入力してください"
         pt_BR: "Insira seu Client ID"
       help:
         en_US: "Client ID is used to authenticate requests to the Microsoft API."
-        zh_Hans: "Client ID 用于认证请求到 Microsoft API。"
+        zh_CN: "Client ID 用于认证请求到 Microsoft API。"
+        ja_JP: "Client ID は Microsoft API へのリクエスト認証に使用されます。"
         pt_BR: "Client ID é usado para autenticar solicitações à API do Microsoft."
       label:
-        zh_Hans: "Client ID"
         en_US: "Client ID"
+        zh_CN: "Client ID"
+        ja_JP: "Client ID"
     - name: "client_secret"
       type: "secret-input"
       required: true
       url: https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/CreateApplicationBlade/quickStartType~/null/isMSAApp~/false
       placeholder:
         en_US: "Please input your Client Secret"
-        zh_Hans: "请输入你的 Client Secret"
+        zh_CN: "请输入你的 Client Secret"
+        ja_JP: "Client Secret を入力してください"
         pt_BR: "Insira seu Client Secret"
       help:
         en_US: "Client Secret is used to authenticate requests to the Microsoft API."
-        zh_Hans: "Client Secret 用于认证请求到 Microsoft API。"
+        zh_CN: "Client Secret 用于认证请求到 Microsoft API。"
+        ja_JP: "Client Secret は Microsoft API へのリクエスト認証に使用されます。"
         pt_BR: "Client Secret é usado para autenticar solicitações à API do Microsoft."
       label:
-        zh_Hans: "Client Secret"
         en_US: "Client Secret"
+        zh_CN: "Client Secret"
+        ja_JP: "Client Secret"
   credentials_schema:
     - name: "access_tokens"
       type: "secret-input"
       label:
-        zh_Hans: "Access Token"
         en_US: "Access Token"
+        zh_CN: "访问令牌"
+        ja_JP: "アクセス トークン"
 identity:
   author: langgenius
   name: microsoft_todo
   label:
-    en_US: Microsoft Todo
+    en_US: Microsoft To Do
+    zh_CN: 微软待办
+    ja_JP: マイクロソフトToDo
   description:
-    en_US: A plugin to interact with Microsoft Todo
+    en_US: A plugin to interact with Microsoft To Do
+    zh_CN: 用于与微软待办交互的插件
+    ja_JP: Microsoft To Doと連携するプラグイン
   icon: icon.png
 tools:
 - tools/complete_task.yaml
