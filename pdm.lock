@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:12cd0ee03e499a72f9b942e846c65424fbcad61c3fa119ddb2be5e48e4b6615a"
+content_hash = "sha256:a1f72d41176557d2ac3cae5bdf8670b9905be9e47423e74ce55197871d793a25"
 
 [[metadata.targets]]
 requires_python = ">=3.12"
@@ -192,7 +192,7 @@ files = [
 
 [[package]]
 name = "dify-plugin"
-version = "0.4.2b1"
+version = "0.4.2b2"
 requires_python = ">=3.11"
 summary = "Dify Plugin SDK"
 groups = ["default"]
@@ -212,8 +212,8 @@ dependencies = [
     "yarl<2.0,>=1.9.4",
 ]
 files = [
-    {file = "dify_plugin-0.4.2b1-py3-none-any.whl", hash = "sha256:9644172e4e4602e233e9b52852ecc71cfb09b95183611763b9b8c0a3c0911c96"},
-    {file = "dify_plugin-0.4.2b1.tar.gz", hash = "sha256:daf5fb05c53d15a7eee413c94a679463d128f90cbc5b08a8e347ba122da1feaf"},
+    {file = "dify_plugin-0.4.2b2-py3-none-any.whl", hash = "sha256:28f4ff1cedf7488828d74a0d3dedc07f09a2ef9b04f900309a76f52ece5f76b0"},
+    {file = "dify_plugin-0.4.2b2.tar.gz", hash = "sha256:af0570846e08a835f17a92d84e64c5d93f58b06e38aeb3563e19f4d9931d9852"},
 ]
 
 [[package]]
