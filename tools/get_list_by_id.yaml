@@ -13,7 +13,7 @@ description:
   llm: Get a list by id from the Microsoft To Do list
 parameters:
 - name: list_id
-  type: string
+  type: dynamic-select
   required: true
   label:
     en_US: List Id
